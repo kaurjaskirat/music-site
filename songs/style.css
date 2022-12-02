@@ -1,0 +1,229 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.logo{
+   font-weight: bolder;
+   font-size: xx-large;
+   color: aliceblue;
+   padding: 10px 60px;
+   line-height: 80px;
+}
+nav{
+   height: 80px;
+   width: 100%;
+   min-width: 40%;
+   background-color: #253957;
+}
+nav ul{
+   float: right;
+   margin-right: 80px;
+}
+nav li{
+   display: inline-block;
+   margin: 0 8px;
+   padding: .5rem;
+   line-height: 70px;
+}
+ a{
+   color: aliceblue;
+   font-size: 22px;
+   border: 1px solid transparent;
+   padding: 7px 10px;
+   border-radius: 3px;
+}
+a#active,a:hover{
+   /* border: 1px solid aliceblue; */
+   transition: .7s;
+   color:cadetblue;
+}
+
+nav #icon1{
+   color: aliceblue;
+   font-size: 30px;
+   line-height: 80px;
+   float: right;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+body {
+    width: 100%;
+    height: 400vh;
+    background-image: linear-gradient(hsla(216, 40%, 24%, 0.737), hsla(216, 40%, 24%, 0.381));
+    background-size: cover;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.playlist{
+    color: rgba(218, 213, 233, 0.982);
+   font-size: x-large;
+    text-align: center;
+  text-decoration: underline;
+    margin-left: 18rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('bgggg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-origin: border-box;
+   /* background-attachment: fixed; */
+   background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: rgba(44, 43, 43, 0.765);
+    color: rgb(247, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+#masterSongName{
+    font-size: 25px;
+    /* padding: 20px 30px; */
+}
+
+.icons{
+    margin-top: 10px; 
+}
+.icons i{
+    cursor: pointer;
+    font-size: 40px;;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+    margin-left:26%;
+}
+
+.fa-play-circle{
+    font-size: 26px;
+}
+.fa-pause-circle{
+    font-size: 26px;
+}
+.songItem{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.879);
+    color: black;
+    margin: 12px 100px;
+    /* padding: 0 60px 0 0; */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    margin: 25px 10px 0 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 800px) {
+    .songItem{
+        margin:12px 0;
+        width: 100%;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+    .songList{
+        flex-wrap: wrap;
+    }
+    .timestamp{
+        display: flex;
+        flex-direction: row;
+    }
+    .playlist{
+        color: aliceblue;
+        margin-left: -7px;
+        /* font-size:medium; */
+    }
+    .songItem img{
+        display: none;
+    }
+    .songItem .songName{
+        font-size: x-small;
+    }
+    .songInfo{
+        opacity: 0;
+    }
+  }
+  @media only screen and (max-width: 1100px){
+    .songItem{
+        margin:12px 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .playlist{
+        color: aliceblue;
+    }
+    .songItem .songName{
+        font-size: 20px;
+    }
+    .songInfo{
+        opacity: 0;
+    }
+  }
